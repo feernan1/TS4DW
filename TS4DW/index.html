@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Amigo - Tarea semana 4</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado con navbar de Bootstrap -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1 class="mb-0">Bar Amigo</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#promos">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <!-- Sección Menú con grid de Bootstrap -->
+        <section id="menu" class="mb-5">
+            <h2 class="text-center mb-4">Nuestros Precios</h2>
+            
+            <div class="row">
+                <!-- Card 1 - Bebidas -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow rounded">
+                        <img src="imagenes/cocteles-de-verano-Bodegas-Salas-zaragoza-cocteles-verano-grande.jpg" class="card-img-top img-fluid" alt="Bebidas">
+                        <div class="card-body">
+                            <h3 class="card-title">Bebidas</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cerveza $3</li>
+                                <li class="list-group-item">Trago simple $5</li>
+                                <li class="list-group-item">Coctel especial $8</li>
+                                <li class="list-group-item">Refresco $2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 - Comida -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow rounded">
+                        <img src="imagenes/vista-frontal-bocadillos-cerveza-rodajas-limon-soporte-vaso-cerveza_141793-17468.avif" class="card-img-top img-fluid" alt="Comida">
+                        <div class="card-body">
+                            <h3 class="card-title">Comida</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Hamburguesa $7</li>
+                                <li class="list-group-item">Alitas $6</li>
+                                <li class="list-group-item">Papas fritas $4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 - Ambiente -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow rounded">
+                        <img src="imagenes/Dublin_City_Alcohol.jpg" class="card-img-top img-fluid" alt="Ambiente del bar">
+                        <div class="card-body">
+                            <h3 class="card-title">Nuestro Ambiente</h3>
+                            <p class="card-text">Disfruta de la mejor música y ambiente en nuestro local.</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#videoCollapse">
+                                Aprende a preparar un coctel
+                            </button>
+                            <div class="collapse mt-3" id="videoCollapse">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/i_3iXr7SzYE?si=IvHHmCQMdWwzAh8S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Promociones -->
+        <section id="promos" class="mb-5">
+            <h2 class="text-center mb-4">Promociones</h2>
+            
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Día</th>
+                            <th>Oferta</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>2x1 en cervezas</td>
+                            <td>$3</td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>Hamburguesa + cerveza</td>
+                            <td>$8</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>Hora feliz (4pm-7pm)</td>
+                            <td>30% descuento</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Sección Contacto con formulario -->
+        <section id="contacto" class="mb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Visítanos</h2>
+                    <p><strong>Horario:</strong> 4pm - 2am</p>
+                    <p><strong>Dirección:</strong> Cayambe, calle Calderón y Humberto Fierro</p>
+                    <div class="map-container mb-4">
+                        <!-- Mapa de Google Maps -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8000000000006!2d-78.154722!3d0.038889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMDInMjAuMCJTIDc4wrAwOScxNy4wIlc!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <h2>Contáctanos</h2>
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                            <div class="invalid-feedback">
+                                Por favor ingresa tu nombre.
+                            </div>
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">
+                                Por favor ingresa un email válido.
+                            </div>
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label for="mensaje" class="form-label">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                            <div class="invalid-feedback">
+                                Por favor escribe tu mensaje.
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-2">© 2025 Bar Amigo - Tarea Semana 4</p>
+            <div class="social-links">
+                <a href="#" class="text-white mx-2">Facebook</a>
+                <a href="#" class="text-white mx-2">Instagram</a>
+                <a href="#" class="text-white mx-2">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Validación de formulario
+        (function() {
+            'use strict';
+            var forms = document.querySelectorAll('.needs-validation');
+            
+            Array.prototype.slice.call(forms)
+                .forEach(function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+        })();
+    </script>
+</body>
+</html>
